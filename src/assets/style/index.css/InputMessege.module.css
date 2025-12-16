@@ -6,50 +6,61 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 0.625rem;
+  gap: 0.75rem;
 }
 .messenger__container-input label {
-  font-size: 1.5625rem;
-  color: #000;
-  padding: 0.625rem 1rem;
-  border-radius: 0.625rem;
-  background-color: lightgoldenrodyellow;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #38bdf8;
 }
-.messenger__container-input .messenger__input {
+
+.messenger__input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 0.625rem;
+  gap: 0.75rem;
 }
-.messenger__container-input .messenger__input input {
+.messenger__input input {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  font-size: 1.25rem;
-  color: #000;
-  background-color: lightgoldenrodyellow;
-  padding: 0.625rem 1.25rem;
-  border-radius: 0.625rem;
-  outline: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 1rem;
+  background-color: #020617;
+  color: #e5e7eb;
+  font-size: 1.1rem;
+  -webkit-box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.9), 0 0 15px rgba(56, 189, 248, 0.25);
+          box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.9), 0 0 15px rgba(56, 189, 248, 0.25);
 }
-.messenger__container-input .messenger__input input:focus {
-  -webkit-box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.15);
-          box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.15);
+.messenger__input input:focus {
+  -webkit-box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.6), inset 0 0 12px rgba(0, 0, 0, 0.9);
+          box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.6), inset 0 0 12px rgba(0, 0, 0, 0.9);
 }
-.messenger__container-input .messenger__input button {
-  font-size: 1.125rem;
-  padding: 0.625rem 1.25rem;
-  border-radius: 0.625rem;
-  background-color: #4caf50;
-  color: #fff;
+.messenger__input button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 1rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #38bdf8, #6366f1);
+  color: #020617;
   white-space: nowrap;
-  -webkit-transition: background-color 0.2s ease, opacity 0.2s ease;
-  transition: background-color 0.2s ease, opacity 0.2s ease;
+  -webkit-box-shadow: 0 0 25px rgba(56, 189, 248, 0.6);
+          box-shadow: 0 0 25px rgba(56, 189, 248, 0.6);
+  -webkit-transition: -webkit-transform 0.15s ease, -webkit-box-shadow 0.15s ease;
+  transition: -webkit-transform 0.15s ease, -webkit-box-shadow 0.15s ease;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, -webkit-transform 0.15s ease, -webkit-box-shadow 0.15s ease;
 }
-.messenger__container-input .messenger__input button:hover:not(:disabled) {
-  background-color: #43a047;
+.messenger__input button:hover:not(:disabled) {
+  -webkit-transform: translateY(-2px);
+      -ms-transform: translateY(-2px);
+          transform: translateY(-2px);
+  -webkit-box-shadow: 0 0 40px rgba(56, 189, 248, 0.85);
+          box-shadow: 0 0 40px rgba(56, 189, 248, 0.85);
 }
-.messenger__container-input .messenger__input button:disabled {
-  opacity: 0.5;
+.messenger__input button:disabled {
+  background: #020617;
+  color: #64748b;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   cursor: not-allowed;
 }

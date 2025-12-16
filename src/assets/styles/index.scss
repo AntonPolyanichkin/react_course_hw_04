@@ -1,11 +1,11 @@
 @use "./_reset" as *;
 .wrapper {
-	min-height: 100%;
+	max-height: 100%;
 	min-width: 100%;
 	display: flex;
 	flex-direction: column;
 	overflow: clip;
-	background-color: rgb(51, 49, 49);
+	background: linear-gradient(145deg, #051042, #020617dd);
 	& .page {
 		flex-grow: 1;
 		& section:not(:last-child) {
@@ -17,7 +17,7 @@
 		color: #fff;
 		font-size: 1.875rem;
 		font-family: Arial, Helvetica, sans-serif;
-		background-color: rgb(130, 126, 126);
+		background-color: #020617dd;
 		text-align: center;
 		padding: 1.875rem;
 	}
