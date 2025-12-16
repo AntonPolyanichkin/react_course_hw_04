@@ -1,0 +1,21 @@
+.messenger{
+	font-family: Arial, Helvetica, sans-serif;
+	border: .125rem solid lightgoldenrodyellow;
+	border-radius: .625rem;
+	padding: 1.875rem;
+	box-shadow: .625rem .625rem 3.625rem black;
+	line-height: 1.2;
+	& .messenger__container{
+		max-width: 50rem;
+	}
+	& .messenger__content{
+		min-height: 31.25rem;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		gap: 1.875rem;
+
+	}
+}

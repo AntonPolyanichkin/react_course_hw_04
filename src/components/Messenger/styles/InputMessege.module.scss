@@ -1,0 +1,51 @@
+.messenger__container-input {
+	display: flex;
+	flex-direction: column;
+	gap: 0.625rem;
+
+	label {
+		font-size: 1.5625rem;
+		color: #000;
+		padding: 0.625rem 1rem;
+		border-radius: 0.625rem;
+		background-color: lightgoldenrodyellow;
+	}
+
+	.messenger__input {
+		display: flex;
+		gap: 0.625rem;
+
+		input {
+			flex: 1;
+			font-size: 1.25rem;
+			color: #000;
+			background-color: lightgoldenrodyellow;
+			padding: 0.625rem 1.25rem;
+			border-radius: 0.625rem;
+			outline: none;
+
+			&:focus {
+				box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.15);
+			}
+		}
+
+		button {
+			font-size: 1.125rem;
+			padding: 0.625rem 1.25rem;
+			border-radius: 0.625rem;
+			background-color: #4caf50;
+			color: #fff;
+			white-space: nowrap;
+			transition: background-color 0.2s ease, opacity 0.2s ease;
+
+			&:hover:not(:disabled) {
+				background-color: #43a047;
+			}
+
+			&:disabled {
+				opacity: 0.5;
+				cursor: not-allowed;
+			}
+		}
+	}
+}

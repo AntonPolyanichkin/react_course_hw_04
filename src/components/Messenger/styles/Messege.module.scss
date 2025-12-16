@@ -1,0 +1,59 @@
+.messenger__messege {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	padding: 0.75rem 1rem;
+	border-radius: 0.75rem;
+	background-color: #f5f5f5;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+	&:not(:last-child) {
+		margin-bottom: 0.625rem;
+	}
+}
+
+
+.messege__text {
+	flex: 1;
+	font-size: 1.125rem;
+	color: #222;
+	word-break: break-word;
+	line-height: 1.3;
+}
+
+
+.messege__button {
+	padding: 0.375rem 0.75rem;
+	font-size: 0.875rem;
+	border-radius: 0.5rem;
+	color: #fff;
+	transition: transform 0.15s ease, opacity 0.15s ease,
+		background-color 0.15s ease;
+
+	&:hover {
+		transform: translateY(-1px);
+		opacity: 0.9;
+	}
+
+	&:active {
+		transform: translateY(0);
+	}
+}
+
+
+.messege__button--like {
+	background-color: #4caf50;
+
+	&:hover {
+		background-color: #43a047;
+	}
+}
+
+
+.messege__button--dislike {
+	background-color: #f44336;
+
+	&:hover {
+		background-color: #e53935;
+	}
+}
